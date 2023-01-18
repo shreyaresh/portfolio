@@ -14,8 +14,8 @@ const aboutMep4: string = `Outside of academics, I love following foreign policy
 
 const AboutMe = () => {
     return (
-        <div className='AboutMe-container'>
-            <NavBar />
+        <div className='container'>
+            <NavBar/>
             <div className = 'AboutMe-page'>
                 <div className = 'AboutMe-text'>
                     <h3 className='child'>{name_header}</h3>
