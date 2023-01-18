@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Staatliches&display=swap');
+
+:root {
+    --background: #F1E8B8;
+    --red: #E4572E;
+    --blue: #2EC4B6;
+    --black: #362C28;
+    --grey: #637081;
+
+    --xs: 4px;
+    --s: 8px;
+    --m: 16px;
+    --l: 24px;
+
+    --main-font: 'Staatliches', cursive;
+    --second-font: 'Baumans', cursive;
+}
+
+
+.u-link {
+    color: var(--black);
+}
+
+.u-link:hover {
+    font-weight: 600px;
+    color: var(--grey);
+    text-decoration-style: underline;
+    text-decoration-color: var(--grey);
+    cursor: pointer;
+}
+
+.u-pointer {
+    cursor: pointer;
+}
+
+.u-inlineBlock {
+    display: inline-block;
+}

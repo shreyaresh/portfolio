@@ -1,0 +1,53 @@
+.AboutMe-container {
+    min-height:100%;
+    display: flex;
+    justify-content: center;
+    border: solid orange;
+}
+
+.AboutMe-page {
+    display: flex;
+    position: fixed;
+    height: fit-content;
+    width: fit-content;
+    border:solid blue;
+    padding-bottom: 10vh;
+    margin-bottom: 60px;
+    justify-content: flex-end;
+}
+
+/* @media only screen and (min-width: 600px) and (min-height: 600px){
+    .AboutMe-container{
+        background-attachment: fixed;
+        background-position: left bottom; 
+        background-repeat: no-repeat;
+        background-image: url("https://gallery.yopriceville.com/downloadfullsize/send/4269");  
+    } 
+} */
+
+.AboutMe-text {
+    margin: var(--m);
+    border:solid green;
+    justify-content: right;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    flex: 0 1 40vw;
+}
+
+.AboutMe-text h3 {
+    border: solid red;
+    height: 100%;
+    font-size: 2em;
+    font-family: var(--main-font);
+    margin: var(--s);
+}
+.AboutMe-text p {
+    height: 100%;
+    font-family: var(--second-font);
+    margin: var(--s);
+}
+
+
+
+

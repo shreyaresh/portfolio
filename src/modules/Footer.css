@@ -1,0 +1,45 @@
+.Footer-container {
+    display: flex;
+    position: fixed;
+    bottom: 10px;
+    padding-right: 10px;
+    max-height: 50px;
+    width: 100vw;
+    justify-content: center;
+    border-top: solid var(--black) 2px;
+    border-bottom: solid var(--black) 2px;
+    align-items: center;
+    background-color: rgba(241, 232, 184, 0.8);
+}
+
+.footer-els {
+    display: flex;
+    justify-content: center;
+    flex: 0 1 30vw;
+    gap: 10%;
+}
+ 
+.imgResize {
+    flex: 1 1 100%;
+    align-self: center;
+    padding: 5px;
+    }
+    
+.imgResize img {
+      width: 90%;
+      height: auto; 
+    }
+ 
+.Image {
+    max-width: 20px;
+    cursor: pointer;
+    width: 100%;
+    margin: 5px;
+}
+
+.Image:hover {
+    opacity: 0.6;
+    transition: opacity 0.55s ease-in-out;
+    -moz-transition: opacity 0.55s ease-in-out;
+    -webkit-transition: opacity 0.55s ease-in-out;
+}
