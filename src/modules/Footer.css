@@ -1,10 +1,9 @@
 .Footer-container {
     display: flex;
-    position: fixed;
+    position: relative;
     bottom: 10px;
-    padding-right: 10px;
     max-height: 50px;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     border-top: solid var(--black) 2px;
     border-bottom: solid var(--black) 2px;

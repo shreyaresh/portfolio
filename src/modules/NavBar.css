@@ -1,20 +1,20 @@
 .NavBar-container {
-    padding-left: 20px;
+    padding-left: 40px;
     display: flex;
     border-bottom: var(--black) solid 0.7px;
     justify-content: flex-start;
     max-height: 20vh;
-    width: 100vw;
     height: auto;
     background-color: rgba(241, 232, 184, 0.8);
     position: sticky;
     top: 0px;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
     .NavBar-container {
         justify-content: center;
         align-items: center;
+        padding: 0;
     }
     .els {
         display: flex;
@@ -30,11 +30,17 @@
     justify-content: flex-start;
     flex: 0 1 50vw;
     gap: 10%;
+    margin:0;
+    padding: var(--s);
 }
 
 .nav-button {
     width: 100%;
     font-family: var(--main-font);
+}
+
+ul {
+    padding-inline-start: 0;
 }
 
 a {
