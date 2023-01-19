@@ -1,14 +1,14 @@
 .Footer-container {
     display: flex;
-    position: relative;
+    position: fixed;
     bottom: 10px;
-    max-height: 50px;
+    max-height: 40px;
     width: 100%;
     justify-content: center;
     border-top: solid var(--black) 2px;
     border-bottom: solid var(--black) 2px;
     align-items: center;
-    background-color: rgba(241, 232, 184, 0.8);
+    background-color: rgb(255, 252, 239, 0.8);
 }
 
 .footer-els {
