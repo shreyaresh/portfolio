@@ -22,16 +22,17 @@ const AboutMe = () => {
             <div className='navbar-wrapper'><NavBar/></div>
             
             <div className = 'AboutMe-page'>
-                <div className = 'AboutMe-text'>
-                    <div className='u-textWrapper'><h3>{name_header}</h3></div>
-                    <div className='u-textWrapper'><p>{aboutMep1}</p></div>
-                    <div className='u-textWrapper'><p>{aboutMep2}</p></div>
-                    <div className='u-textWrapper'><p>{aboutMep3}</p></div>
-                    <div className='u-textWrapper'><p>{aboutMep4}</p></div>
-                </div>
                 <div className='AboutMe-img'>
                     <img src={'me.png'} alt='Stylized self-portrait'/>
                 </div>
+                <div className = 'AboutMe-text'>
+                    <div className='u-textWrapper u-cursorText'><h3>{name_header}</h3></div>
+                    <div className='u-textWrapper u-cursorText'><p>{aboutMep1}</p></div>
+                    <div className='u-textWrapper u-cursorText'><p>{aboutMep2}</p></div>
+                    <div className='u-textWrapper u-cursorText'><p>{aboutMep3}</p></div>
+                    <div className='u-textWrapper u-cursorText'><p>{aboutMep4}</p></div>
+                </div>
+                
             </div>
             <Footer />
         </div>

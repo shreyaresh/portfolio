@@ -1,4 +1,4 @@
-.u-pageContainer.home {
+.home {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -74,7 +74,7 @@
 
 
 @media screen and (min-width: 600px){
-    .u-pageContainer.home {
+    .home {
         background: url("../../public/front-page-border.png");
         background-repeat: no-repeat;
         background-position: left bottom;
@@ -82,7 +82,7 @@
     }
 }
 @media screen and (min-width: 900px){
-    .u-pageContainer.home {
+    .home {
     background: url("../../public/front-page-border.png"), url("../../public/front-page-border-right.png");
     background-repeat: no-repeat;
     background-position: left bottom, right bottom;

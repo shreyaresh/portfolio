@@ -14,7 +14,9 @@
 
     --main-font: 'Staatliches', cursive;
     --second-font: 'Baumans', cursive;
+    
 }
+
 
 .navbar-wrapper {
     width: 100%;
@@ -30,21 +32,26 @@
     text-decoration-style: underline;
     /* text-decoration-color: var(--grey); */
     opacity:0.8;
-    cursor: pointer;
+    cursor: url('/public/select.png'), pointer;
 }
 
 .u-pageContainer {
     position:absolute;
     width: 100%;
     height: calc(100%);
+    cursor: url('/public/pointer.png'), default;
 }
 .u-textWrapper {
     display: inline-block;
     max-height: fit-content;
 }
 
+.u-cursorText {
+    cursor: url('/public/blinker.png'), text;
+}
+
 .u-pointer {
-    cursor: pointer;
+    cursor: url('/public/select.png'), pointer;
 }
 
 .u-inlineBlock {

@@ -13,7 +13,7 @@
 }
 .AboutMe-img {
     max-width: 50vw;
-    height: 40vh;
+    height: 50vh;
     padding: var(--m);
 }
 
@@ -49,7 +49,7 @@
 
 @media screen and (max-width: 600px){
     .AboutMe-page {
-        flex-direction: column-reverse;
+        flex-direction: column;
         height: calc(100% + 25vh);
         width:100%; 
         justify-content: flex-end;
@@ -73,11 +73,11 @@
     .AboutMe-text {padding-bottom: 70px ;}
 }
 
-@media screen and (min-width: 940px) and (min-height: 600px){
+@media screen and (min-width: 900px) and (min-height: 600px){
     .AboutMe-page {
         background: url("../../public/AboutMe.png");
         background-repeat: no-repeat;
         background-position: left bottom;
-        background-size: 30vw;
+        background-size: contain;
     }
 }

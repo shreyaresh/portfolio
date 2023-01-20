@@ -12,8 +12,8 @@ const Home = () => {
             </div>
             <div className = 'Home-page'>
                 <div className='Home-text'>
-                    <h3 className='u-textWrapper'>Shreya Reshamwala</h3>
-                    <h5 className='u-textWrapper'>Third year student at the Massachusetts Institute of Technology</h5>
+                    <h3 className='u-textWrapper u-cursorText'>Shreya Reshamwala</h3>
+                    <h5 className='u-textWrapper u-cursorText'>Third year student at the Massachusetts Institute of Technology</h5>
                 </div>
             </div>
             <Footer />
