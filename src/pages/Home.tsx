@@ -6,12 +6,15 @@ import "./Home.css";
 
 const Home = () => {
     return (
-        <div className='u-pageContainer'>
-            <NavBar />
-            <div className='Home-page'>
-                <h3 className='Home-text'>
-                    Shreya Reshamwala
-                </h3>
+        <div className='u-pageContainer home'>
+            <div className='navbar-wrapper'>
+                <NavBar />
+            </div>
+            <div className = 'Home-page'>
+                <div className='Home-text'>
+                    <h3 className='u-textWrapper'>Shreya Reshamwala</h3>
+                    <h5 className='u-textWrapper'>Third year student at the Massachusetts Institute of Technology</h5>
+                </div>
             </div>
             <Footer />
         </div>

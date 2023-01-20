@@ -19,7 +19,8 @@ const AboutMe = () => {
 
     return (
         <div className='u-pageContainer'>
-            <NavBar/>
+            <div className='navbar-wrapper'><NavBar/></div>
+            
             <div className = 'AboutMe-page'>
                 <div className = 'AboutMe-text'>
                     <div className='u-textWrapper'><h3>{name_header}</h3></div>

@@ -16,6 +16,9 @@
     --second-font: 'Baumans', cursive;
 }
 
+.navbar-wrapper {
+    width: 100%;
+}
 
 .u-link {
     color: var(--black);
@@ -36,6 +39,7 @@
     height: calc(100%);
 }
 .u-textWrapper {
+    display: inline-block;
     max-height: fit-content;
 }
 
