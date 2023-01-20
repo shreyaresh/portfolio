@@ -14,10 +14,10 @@ const NavBar = () => {
                 <Link  className='nav-button u-link' to="/">Home</Link>
             </li>
             <li className='u-inlineBlock'>
-                <Link  className='nav-button u-link' to="../pages/AboutMe.tsx">About Me</Link>
+                <Link  className='nav-button u-link' to="../about-me">About Me</Link>
             </li>
             <li className='u-inlineBlock'>
-                <Link className='nav-button u-link' to="../pages/Projects.tsx">Projects</Link>
+                <Link className='nav-button u-link' to="../projects">Projects</Link>
             </li>
         </ul>
     </div>

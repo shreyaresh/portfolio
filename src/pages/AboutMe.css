@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: row;
+    flex:1;
 }
 
 .AboutMe-page img {
@@ -15,11 +16,7 @@
     height: 40vh;
     padding: var(--m);
 }
-/* 
-.AboutMe-img img {
-    width: 100%;
-    height: auto;
-} */
+
 
 .AboutMe-text {
     margin: var(--l);
@@ -62,7 +59,11 @@
         justify-content: center;
         margin: var(--m);
     }
-    .AboutMe-text h3 {background-color: rgba(46, 196, 182, 0.3); padding: var(--s); height:fit-content;}
+    .AboutMe-text h3 {
+        background-color: rgba(46, 196, 182, 0.3);
+        padding: var(--s);
+        height:fit-content;
+    }
 }
 /* .u-textWrapper {
     width: 80%;
