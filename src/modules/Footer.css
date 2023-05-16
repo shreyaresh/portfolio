@@ -1,7 +1,7 @@
 .Footer-container {
     display: flex;
-    position: fixed;
-    bottom: 10px;
+    position: fixed; 
+    bottom:10px;
     max-height: 40px;
     width: 100%;
     justify-content: center;
@@ -12,14 +12,12 @@
 }
 
 .footer-els {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
-    flex: 0 1 30vw;
     gap: 10%;
 }
  
 .imgResize {
-    flex: 1 1 100%;
     align-self: center;
     padding: 5px;
     }
@@ -32,7 +30,6 @@
 .Image {
     max-width: 20px;
     cursor: pointer;
-    width: 100%;
     margin: 5px;
 }
 

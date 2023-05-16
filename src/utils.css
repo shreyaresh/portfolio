@@ -36,7 +36,7 @@
 }
 
 .u-pageContainer {
-    position:absolute;
+    position:absolute;    
     width: 100%;
     height: calc(100%);
     cursor: url('/public/pointer.png'), default;

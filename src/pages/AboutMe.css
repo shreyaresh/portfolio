@@ -1,20 +1,31 @@
 .AboutMe-page {
-    display: flex;
+    display: inline-flex;
+    flex-direction: row;
     width: 100%;
-    height: calc(100% - 60px);
+    height: fit-content;
+    padding-top: 5vh;
     justify-content: center;
     align-items: center;
     flex-wrap: row;
     flex:0 1;
 }
 
-.AboutMe-page img {
-    height: 100%;
+.AboutMe-img img {
+    max-width: 100%;
+    max-height: min(50vh, 500px);
+    margin: auto;
+    display: block;  
+
 }
 .AboutMe-img {
-    max-width: 50vw;
-    height: 50vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    max-height: min(50vh, 500px);
     padding: var(--m);
+    border: 1rem solid;
+    border-color: var(--red);
 }
 
 
@@ -22,10 +33,10 @@
     margin: var(--l);
     margin-right: 5%;
     align-content: center;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     text-align: start;
-    height: fit-content;
+    max-height: fit-content;
     flex: 0 1 30vw;
 
     background-color: var(--background);
@@ -50,7 +61,6 @@
 @media screen and (max-width: 600px){
     .AboutMe-page {
         flex-direction: column;
-        height: calc(100% + 25vh);
         width:100%; 
         justify-content: flex-end;
 }
@@ -71,13 +81,4 @@
 
 @media screen and (max-width: 880px){
     .AboutMe-text {padding-bottom: 70px ;}
-}
-
-@media screen and (min-width: 900px) and (min-height: 600px){
-    .AboutMe-page {
-        background: url("../../public/AboutMe.png");
-        background-repeat: no-repeat;
-        background-position: left bottom;
-        background-size: contain;
-    }
 }
