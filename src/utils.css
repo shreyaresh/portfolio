@@ -32,14 +32,14 @@
     text-decoration-style: underline;
     /* text-decoration-color: var(--grey); */
     opacity:0.8;
-    cursor: url('/public/select.png'), pointer;
+    cursor: url('/select.png'), pointer;
 }
 
 .u-pageContainer {
     position:absolute;    
     width: 100%;
     height: calc(100%);
-    cursor: url('/public/pointer.png'), default;
+    cursor: url('/pointer.png'), default;
 }
 .u-textWrapper {
     display: inline-block;
@@ -47,11 +47,11 @@
 }
 
 .u-cursorText {
-    cursor: url('/public/blinker.png'), text;
+    cursor: url('/blinker.png'), text;
 }
 
 .u-pointer {
-    cursor: url('/public/select.png'), pointer;
+    cursor: url('/select.png'), pointer;
 }
 
 .u-inlineBlock {

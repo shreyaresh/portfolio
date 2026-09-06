@@ -75,7 +75,7 @@
 
 @media screen and (min-width: 600px){
     .home {
-        background: url("../../public/front-page-border.png");
+        background: url("/front-page-border.png");
         background-repeat: no-repeat;
         background-position: left bottom;
         background-size: contain;
@@ -83,7 +83,7 @@
 }
 @media screen and (min-width: 900px){
     .home {
-    background: url("../../public/front-page-border.png"), url("../../public/front-page-border-right.png");
+    background: url("/front-page-border.png"), url("/front-page-border-right.png");
     background-repeat: no-repeat;
     background-position: left bottom, right bottom;
     background-size: contain;
