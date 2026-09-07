@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@400;500;600&display=swap');
+
+/* Shared Bauhaus design language: blue backdrop, cream card, nav, follow row.
+   Palette — https://hueatlas.com/color-palettes/bauhaus-color-palette/ */
+
+.page {
+    --bauhaus-blue: #1E3878;
+    --bauhaus-cream: #F5F2E8;
+    --bauhaus-concrete: #8A8680;
+    --bauhaus-red: #C8302A;
+    --bauhaus-yellow: #E8C018;
+    --bauhaus-gold: #C89620;
+    --bauhaus-black: #1A1A18;
+
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bauhaus-blue);
+    padding: clamp(16px, 4vw, 64px);
+}
+
+.page *,
+.page *::before,
+.page *::after {
+    box-sizing: inherit;
+}
+
+.page-card {
+    position: relative;
+    width: min(1180px, 100%);
+    background: var(--bauhaus-cream);
+    box-shadow: 14px 16px 0 rgba(0, 0, 0, 0.25);
+    padding: clamp(24px, 4vw, 56px) clamp(24px, 5vw, 72px);
+    overflow: hidden;
+}
+
+/* --- nav --- */
+
+.page-nav {
+    display: flex;
+    gap: clamp(28px, 6vw, 90px);
+    position: relative;
+    z-index: 2;
+}
+
+.page-navLink {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--bauhaus-black);
+    text-decoration: none;
+}
+
+.page-navLink:hover {
+    color: var(--bauhaus-red);
+}
+
+/* --- cta --- */
+
+.page-cta {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--bauhaus-cream);
+    background: var(--bauhaus-red);
+    border-radius: 999px;
+    padding: 16px 34px;
+    text-decoration: none;
+    box-shadow: 5px 6px 0 rgba(0, 0, 0, 0.3);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.page-cta:hover {
+    transform: translate(2px, 3px);
+    box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.3);
+    color: var(--bauhaus-cream);
+}
+
+/* --- follow row --- */
+
+.page-follow {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.page-followLabel {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--bauhaus-black);
+}
+
+.page-icon {
+    display: inline-flex;
+    color: var(--bauhaus-black);
+}
+
+.page-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.page-icon:hover {
+    color: var(--bauhaus-red);
+}
+
+@media screen and (max-width: 880px) {
+    .page-nav {
+        justify-content: center;
+    }
+
+    .page-follow {
+        justify-content: center;
+    }
+}

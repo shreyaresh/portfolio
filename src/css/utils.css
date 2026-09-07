@@ -32,14 +32,12 @@
     text-decoration-style: underline;
     /* text-decoration-color: var(--grey); */
     opacity:0.8;
-    cursor: url('/select.png'), pointer;
 }
 
 .u-pageContainer {
     position:absolute;    
     width: 100%;
     height: calc(100%);
-    cursor: url('/pointer.png'), default;
 }
 .u-textWrapper {
     display: inline-block;
@@ -47,11 +45,9 @@
 }
 
 .u-cursorText {
-    cursor: url('/blinker.png'), text;
 }
 
 .u-pointer {
-    cursor: url('/select.png'), pointer;
 }
 
 .u-inlineBlock {

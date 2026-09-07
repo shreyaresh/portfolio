@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+# Shreya Reshamwala — Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My personal portfolio, designed after Bauhaus poster art: a deep blue backdrop, a cream card, Archivo Black display type, and hand-drawn SVG compositions in the [Bauhaus color palette](https://hueatlas.com/color-palettes/bauhaus-color-palette/). Originally built from scratch in 2023 with Create React App, revamped in 2026 with Claude and migrated to Vite. Hosted on Netlify.
 
-## Available Scripts
+## Stack
 
-In the project directory, you can run:
+- **React 19** + **TypeScript**, bundled with **Vite 7**
+- **React Router 7** for client-side routing
+- **Vitest** + React Testing Library for tests
+- Plain CSS with custom properties for the palette — no CSS framework
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Interactive project gallery** — every project is a shape in a geometric composition; hover a title and its shape swells (and vice versa), click either to open the details
+- **Custom cursor** — a Bauhaus-red dot that inflates into a ring over anything clickable (fine-pointer devices only)
+- **Duotone portrait** — the About photo is blended into the cream paper with CSS filters, no image editing
+- Fully responsive, keyboard-accessible shapes, custom SVG favicon
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Running locally
 
-### `npm test`
+Node 20 (pinned in `.tool-versions` for asdf users).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+npm start        # dev server at http://localhost:3000
+```
 
-### `npm run build`
+Other scripts:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm test         # Vitest watcher (CI: npx vitest run)
+npm run build    # type-check + production build into dist/
+npm run preview  # serve the production build
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+src/
+├── pages/          # one folder per route
+│   ├── Home/
+│   ├── AboutMe/
+│   └── Projects/   # page + ProjectDetail/ProjectIndex + project data
+├── modules/        # shared components: PageNav, Follow, Cursor
+├── graphics/       # all custom SVG: GeoArt, ProjectsArt, icons
+├── css/            # all stylesheets; theme.css holds the shared design + palette
+└── types.ts        # shared types
+```
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+To add a project, edit `src/pages/Projects/constants.ts` — and give it a shape in `src/graphics/ProjectsArt.tsx`.
